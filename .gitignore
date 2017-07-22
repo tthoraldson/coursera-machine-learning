@@ -1,0 +1,18 @@
+# all folders
+*/token.mat
+*/submit.m
+
+# week-2
+week-2/ex1_multi.m
+week-2/ex1.m
+week-2/ex1data1.txt
+week-2/ex1data2.txt
+week-2/gradientDescentMulti.m
+
+# week-3
+week-3/ex2_reg.m
+week-3/ex2.m
+week-3/ex2data1.txt
+week-3/ex2data2.txt
+week-3/mapFeature.m
+week-3/plotDecisionBoundary.m

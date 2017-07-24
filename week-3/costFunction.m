@@ -24,15 +24,13 @@ grad = zeros(size(theta));
 predictions = sigmoid(X * theta);
 
 % Computing J(theta)
-J = - (1 / m) .* sum((y .* log(predictions)) + ((1 - y) .* log(1 - predictions)));
+J = sum((-1 * (y .* log(predictions))) - ((1 - y) .* log(1 - predictions))) / m;
 
 
-grad = ((predictions - y) .* X) / m
-size(theta)
-size(grad)
+grad = (X' * (predictions - y)) * (1 / m);
 
-
-
+theta
+grad
 
 % =============================================================
 

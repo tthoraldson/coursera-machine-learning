@@ -20,7 +20,17 @@ grad = zeros(size(theta));
 
 
 
+% predictions -> hypothesis
+predictions = sigmoid(X * theta);
 
+term1 = (-1) * (y .* log(predictions));
+term2 = (1 - y) .* log(1 - predictions);
+
+% Computing J(theta)
+J = (1 / m) * sum(term1 - term2) + (sum(theta([2:end]) .^ 2) * (lambda / (2 * m)));
+
+
+%grad = ;
 
 % =============================================================
 
